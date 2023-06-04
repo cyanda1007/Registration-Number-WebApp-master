@@ -1,0 +1,119 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .row {
+        padding: 40px;
+    }
+    
+    .container {
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 25px;
+    }
+    
+    .RegTextHolder {
+        font-size: large;
+    }
+    
+    .reg input {
+        width: 400px;
+        border-radius: 6px;
+        padding: 20px 30px;
+        margin: 15px 0;
+        margin-bottom: 2%;
+        background-color: cyan;
+        color: black;
+    }
+    
+    .regBtn,
+    .regBtnTemp {
+        width: 50x;
+        border-radius: 6px;
+        padding: 22px 30px;
+        margin: 15px 0;
+        margin-bottom: 3%;
+        background-color: cyan;
+        color: black;
+        font-size: 16px;
+    }
+    
+    .regBtn:hover,
+    .regBtnTemp:hover {
+        background: white;
+    }
+    
+    .container input[type="radio"] {
+        margin-bottom: 50px;
+    }
+    
+    .reggText {
+        font-size: x-large;
+    }
+    
+    .container1 .displayButton,
+    .resetButton,
+    .displayByTown,
+    .container1Temp,
+    .displayButtonTemp,
+    .resetButtonTemp,
+    .displayByTownTemp {
+        background-color: cyan;
+        border-radius: 7px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .container1 .displayButton:hover,
+    .resetButton:hover,
+    .displayByTown:hover,
+    .container1Temp .displayButtonTemp:hover,
+    .resetButtonTemp:hover,
+    .displayByTownTemp:hover {
+        background: white;
+    }
+    
+    .container1 button {
+        font-size: 800;
+        color: red;
+    }
+    
+    a {
+        width: 30%;
+        padding: 5px 10px;
+        margin: 15px 0;
+        margin-bottom: 2%;
+        color: black;
+    }
+    
+    h3 {
+        padding-top: 8px;
+    }
+    
+    .btn-styled {
+        font-size: 18px;
+        margin: 6px;
+        padding: 0 10px;
+        line-height: 3;
+        border-radius: 15px;
+        background-color: yellow;
+    }
+    
+    #templateDisplay button {
+        font-size: 18px;
+        margin: 6px;
+        padding: 0 10px;
+        line-height: 3;
+        border-radius: 15px;
+        background-color: yellow;
+    }

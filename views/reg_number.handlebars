@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="all">
+            <div class="reg">
+                <h1>Registration Number WebApp!</h1>
+                <div class="err">
+                    <span class="errorMessage"></span>
+                    {{#if errorMessage.getErrors}}
+                    <div class ="errors{{color}}">
+                        {{errorMessage.getErrors}}
+                    </div>
+                    {{/if}}
+                </div>
+                <form action="/reg_number" method="POST">
+                    <div>
+                        <label class="Reg">
+                            <input type="text" value="" name="addRegistration" required class="regTextHolder"
+                                placeholder="registration format! e.g. CA 123456 CL 123-123 CY 123 456">
+                            <button class="regBtn"  type="submit">ADD</button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <form action="/reg_numbers" method="POST">
+                <div class="container style= align-items: center;">
+                    <label for="" class="">
+                        <input type="radio" name="registrationRadio" class="reggRadio" value="CA">
+                        <span class="reggText">Cape Town</span>
+                    </label>
+                    <label for="" class="">
+                        <input type="radio" name="registrationRadio" class="reggRadio" value="CY">
+                        <span class="reggText">Bellville</span>
+                    </label>
+                    <label for="" class="">
+                        <input type="radio" name="registrationRadio" class="reggRadio" value="CJ">
+                        <span class="reggText">Paarl</span>
+                    </label>
+                    <label for="" class="">
+                        <input type="radio" name="registrationRadio" class="reggRadio" value="CL">
+                        <span class="reggText">Stellenbosh</span>
+                    </label>
+                </div>
+                <div class="container1">
+                    <button class="displayByTown"  type="submit">Display By Town</button>
+                </div>
+            </form>
+            <form action="bottuns" method="GET">
+            <div class="container1">
+                    <button class="displayButton"  type="submit">Display All</button>
+                </div>
+            </form>
+            <form action="resetBtn" method="GET">
+            <div class="container1">
+                    <button class="resetButton"  type="submit">Reset</button>
+                </div>
+            </form>
+            <div>
+                <h3><span class="regPlate">
+                    {{#if errorMessage.appedChild}}
+                    <div class= "appedChild">
+                        {{errorMessage.appedChild}}
+                    </div>
+                    </span></h3>
+                    {{/if}}
+                    {{#each registrationNumber}}
+                        <plates>{{regNo}}</plates>
+
+                    {{/each}}    
+            </div>
+            <div>
+                <h3><span class="errors">
+                    </span></h3>
+            </div>
+            <p>
+                &nbsp;
+            </p>
+            <div id="regNumDisplay">
+
+            </div>
+        </div>
+    </div>
